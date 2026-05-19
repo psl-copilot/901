@@ -22,7 +22,7 @@ export async function handleTransaction(
     throw new Error('Invalid config provided - exitConditions not provided');
   }
 
-  var adeel = req.transaction.Payload.amount;
+  var adeel = transaction.Payload.amount;
 
   return determineOutcome(adeel, ruleConfig, ruleRes);
   
